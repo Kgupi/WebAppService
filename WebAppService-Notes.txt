@@ -1,0 +1,35 @@
+WebAppService Resources
+-----------------------
+ASP.NET Core CLI Commands
+-------------------------
+New Web API Project:	dotnet new webapi -n WebAppService
+Run Project App:		dotnet run
+
+
+EF Core Packages Install and Config
+-----------------------------------
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Design
+Install-Package Microsoft.EntityFrameworkCore.Tools
+
+Lazy Loading Package:		Install-Package Microsoft.EntityFrameworkCore.Proxies
+
+
+Scaffold DB First Model
+-----------------------
+Scaffold-DbContext "Server=KGUPI-MACHINE;Database=BookStore;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+NLog Packages Install and Config
+--------------------------------
+Install-Package NLog.Extensions.Logging -Version 1.5.0
+Update-Package NLog.Extensions.Logging
+
+
+Log File (nlog.config) Changes:		fileName="C:/VisionDream/VDSW/Release/BookStoreApp/Logs/target/${shortdate}_logfile.txt"
+Internal Logging:					internalLogFile="C:\VisionDream\VDSW\Release\BookStoreApp\Logs\internal\internallog.txt"
+
+
+
+
+
